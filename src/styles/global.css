@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;500;600&display=swap');  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #1D4E6B;
+  --secondary: #3FC7C3;
+  --background: #F7FFFD;
+  --card: #FFFFFF;
+  --heading: #0B2233;
+  --border: #B7FFF2;
+}
+
+body {
+  background: var(--background);
+  font-family: "Open Sans", sans-serif;
+  color: var(--heading);
+}

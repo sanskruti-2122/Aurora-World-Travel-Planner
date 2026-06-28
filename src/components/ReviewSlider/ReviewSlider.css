@@ -1,0 +1,380 @@
+/* ===========================
+   Review Section
+=========================== */
+
+.review-section{
+
+    width:100%;
+
+
+    padding:10px 8% 100px;
+
+padding:70px 8% 100px;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(63,199,195,.12),
+        transparent 40%),
+
+        radial-gradient(circle at bottom right,
+        rgba(183,255,242,.15),
+        transparent 45%),
+
+        #F7FFFD;
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+.review-title{
+
+    text-align:center;
+
+    font-size:48px;
+
+    font-family:"Playfair Display",serif;
+
+    color:#0B2233;
+
+    margin-bottom:12px;
+
+}
+
+.review-subtitle{
+
+    text-align:center;
+
+    color:#5E7685;
+
+    font-size:18px;
+
+    margin-bottom:60px;
+
+}
+
+/* ===========================
+   Swiper
+=========================== */
+
+.swiper{
+
+    padding-bottom:70px;
+  overflow: visible !important;
+}
+
+.swiper-slide{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+/* ===========================
+   Review Card
+=========================== */
+
+.review-card{
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(183,255,242,.8);
+
+    border-radius:28px;
+
+    padding:35px 28px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        0 12px 30px rgba(29,78,107,.08);
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+        0 20px 50px rgba(29,78,107,.15),
+
+        0 0 35px rgba(63,199,195,.25);
+
+}
+.review-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:#3FC7C3;
+
+    filter:blur(100px);
+
+    opacity:.18;
+
+    top:-80px;
+
+    right:-80px;
+
+}
+
+/* ===========================
+   User Image
+=========================== */
+
+.review-image{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid white;
+
+    box-shadow:
+
+        0 0 0 3px #B7FFF2,
+
+        0 10px 25px rgba(29,78,107,.15);
+
+    margin-bottom:18px;
+
+}
+
+
+/* ===========================
+   Name
+=========================== */
+
+.review-card h3{
+
+    font-size:24px;
+
+    color:#0B2233;
+
+    margin-bottom:12px;
+
+    font-family:"Playfair Display",serif;
+
+}
+
+
+/* ===========================
+   Stars
+=========================== */
+
+.stars{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:5px;
+
+    color:#FFD54A;
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+
+/* ===========================
+   Review Text
+=========================== */
+
+.review-card p{
+
+    color:#5E7685;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+
+/* ===========================
+   Navigation Buttons
+=========================== */
+
+.swiper-button-next,
+.swiper-button-prev{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 10px 25px rgba(29,78,107,.12);
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+
+    font-size:20px;
+
+    color:#1D4E6B;
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+
+    background:#3FC7C3;
+
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after{
+
+    color:white;
+
+}
+
+/* ===========================
+   Pagination Dots
+=========================== */
+
+.swiper-pagination-bullet{
+
+    width:12px;
+
+    height:12px;
+
+    background:#B7FFF2;
+
+    opacity:1;
+
+}
+
+.swiper-pagination-bullet-active{
+
+    width:34px;
+
+    border-radius:20px;
+
+    background:#3FC7C3;
+
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:1024px){
+
+    .review-card{
+
+        width:320px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .review-section{
+
+        padding:70px 5%;
+
+    }
+
+    .review-title{
+
+        font-size:34px;
+
+    }
+
+    .review-subtitle{
+
+        font-size:16px;
+
+    }
+
+    .review-card{
+
+        width:100%;
+
+        max-width:360px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .review-title{
+
+        font-size:28px;
+
+    }
+
+    .review-card{
+
+        padding:25px;
+
+    }
+
+    .review-image{
+
+        width:90px;
+
+        height:90px;
+
+    }
+
+    .review-card h3{
+
+        font-size:20px;
+
+    }
+
+}
+.quote{
+
+    position:absolute;
+
+    top:18px;
+
+    right:22px;
+
+    font-size:60px;
+
+    color:#3FC7C3;
+
+    opacity:.15;
+
+    font-family:"Playfair Display",serif;
+
+}
