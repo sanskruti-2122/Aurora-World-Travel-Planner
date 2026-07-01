@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/f
 import logo from "../../assets/images/logo.png"; // Change path if needed
 import { Link } from "react-router-dom";
 
-function Footer() {
+function Footer({ openLogin }) {
     return (
         <>
             <footer className="footer">
@@ -30,7 +30,12 @@ function Footer() {
 
                         <li><a href="#">Suggestions</a></li>
                         <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li className="footer-login"
+    onClick={openLogin}
+    style={{ cursor: "pointer" }}
+>
+    Login
+</li>
                     </ul>
                 </div>
 

@@ -96,7 +96,8 @@
     position:relative;
 }
 
-.nav-links a{
+.nav-links a,
+.nav-links .login-btn{
 
     text-decoration:none;
 
@@ -131,7 +132,8 @@
     transition:.35s;
 }
 
-.nav-links a:hover{
+.nav-links a:hover,
+.nav-links .login-btn:hover{
 
     color:#3FC7C3;
 }
@@ -266,4 +268,23 @@ height:48px;
 
 }
 
+}
+.login-btn {
+    background: transparent;
+    border: none;
+ transition: color 0.3s ease;}
+ .nav-links .login-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 3px;
+    background: #38cfd0;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.nav-links .login-btn:hover::after {
+    width: 100%;
 }
